@@ -45,7 +45,7 @@ class Maze {
       let r1 = this.getRoot(index1)
       let r2 = this.getRoot(index2)
 
-      // 如果不同根，合并
+      // 如果不同根，合并,修改联通状态
       if (r1 != r2) {
         this.union(index1, index2)
         // 修改对应格子处的数字
